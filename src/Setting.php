@@ -52,7 +52,7 @@ class Setting
             }
 
             $settings = Cache::rememberForever('setting_primary', function () {
-                return SettingModel::where('is_primary', true )->pluck('key', 'value')->toArray();
+                return SettingModel::where('is_primary', true )->pluck('value', 'key')->toArray();
             });
 
             return $settings;
