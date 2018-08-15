@@ -51,7 +51,6 @@ class SettingController extends Controller {
 
 
         # and you want Clear All primary Cache Data With :
-
         Setting::clean();
     }
 }
