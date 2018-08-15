@@ -1,5 +1,5 @@
 <?php
-namespace Webafra\LaravelSetting\Model;
+namespace Webafra\LaraSetting\Model;
 
 use Illuminate\Database\Eloquent\Model;
 
