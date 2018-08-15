@@ -44,6 +44,24 @@ class Setting
         }
     }
 
+    public function getPrimary($default = null)
+    {
+        try {
+            if (Cache::has('setting_primary')) {
+                return Cache::get('setting_primary');
+            }
+
+            $settings = Cache::rememberForever('setting_primary', function () {
+                return SettingModel::where('is_primary', true )->pluck('key', 'value')->toArray();
+            });
+
+            return $settings;
+
+        } catch (\Exception $e) {
+            return $default;
+        }
+    }
+
     public function store($setting)
     {
         $i = 0;
