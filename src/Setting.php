@@ -8,7 +8,7 @@ use Illuminate\Support\Facades\Cache;
 class Setting
 {
 
-    public function set($key, $value, $is_primary)
+    public function set($key, $value, $is_primary = false)
     {
         if (\Cache::has('setting_' . $key)) {
             Cache::forget('setting_' . $key);
