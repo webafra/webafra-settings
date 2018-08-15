@@ -1,0 +1,18 @@
+{
+    "name": "webafra/laravelsetting",
+    "description": "Store your custom Settings in database and cache system",
+    "require": {},
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Mohammad Ali nasab",
+            "email": "webafra@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "webafra\\LaravelSetting\\": "src/"
+        }
+    },
+    "minimum-stability": "dev"
+}
