@@ -83,7 +83,7 @@ class Setting
     }
 
 
-    public function clean($setting)
+    public function clean()
     {
         Cache::forget('setting_primary');
     }
