@@ -1,17 +1,17 @@
 {
-    "name": "webafra/larasettings",
+    "name": "webafra/larasetting",
     "description": "Store your custom Settings in database and cache system",
     "require": {},
     "license": "MIT",
     "authors": [
         {
-            "name": "Mohammad Ali nasab",
+            "name": "Mohammad Ali Nasab",
             "email": "webafra@gmail.com"
         }
     ],
     "autoload": {
         "psr-4": {
-            "webafra\\LaraSetting\\": "src/"
+            "Webafra\\LaraSetting\\": "src/"
         }
     },
     "minimum-stability": "dev"

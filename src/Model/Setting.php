@@ -1,8 +1,8 @@
 <?php
-namespace Webafra\LaraSetting\Model;
+namespace Webafra\LaravelSetting\Model;
 
 use Illuminate\Database\Eloquent\Model;
 
 class Setting extends Model {
-    protected $fillable = ['key', 'value', 'is_primary'];
+    protected $fillable = ['key', 'value'];
 }
