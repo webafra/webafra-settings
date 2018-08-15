@@ -1,8 +1,8 @@
 <?php
 
-namespace Webafra\LaravelSetting;
+namespace Webafra\LaraSetting;
 
-use Webafra\LaravelSetting\Model\Setting as SettingModel;
+use Webafra\LaraSetting\Model\Setting as SettingModel;
 use Illuminate\Support\Facades\Cache;
 
 class Setting
