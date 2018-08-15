@@ -82,4 +82,12 @@ class Setting
         return $i;
     }
 
+
+    public function clean($setting)
+    {
+        Cache::forget('setting_primary');
+    }
+
+
+
 }
