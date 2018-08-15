@@ -1,5 +1,5 @@
 <?php
-namespace Webafra\LaravelSetting\Facade;
+namespace Webafra\LaraSetting\Facade;
 
 use Illuminate\Support\Facades\Facade;
 
@@ -12,6 +12,6 @@ class Setting extends Facade {
      */
     protected static function getFacadeAccessor()
     {
-        return \Webafra\LaravelSetting\Setting::class;
+        return \Webafra\LaraSetting\Setting::class;
     }
 }

@@ -2,13 +2,13 @@
 
 install via composer
 
-`composer require webafra/laravelsetting`
+`composer require webafra/larasettings`
 
 Add Service Provider to `config/app.php` providers array:
 ```php
 'providers' => [
     ....
-    Webafra\LaravelSetting\LaravelSettingServiceProvider::class,
+    Webafra\LaraSetting\LaraSettingServiceProvider::class,
 ]
 ```
 
@@ -16,7 +16,7 @@ And add alias to aliases array:
 ```php
 'aliases' => [
     ...
-    'Setting' => Webafra\LaravelSetting\Facade\Setting::class,
+    'Setting' => Webafra\LaraSetting\Facade\Setting::class,
 ]
 ```
 
@@ -37,7 +37,7 @@ php artisan migrate
 <?php
 namespace App\Http\Controllers;
 
-use Webafra\LaravelSetting\Facade\Setting;
+use Webafra\LaraSetting\Facade\Setting;
 
 class SettingController extends Controller {
     public function index(){

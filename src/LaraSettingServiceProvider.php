@@ -1,10 +1,10 @@
 <?php
 
-namespace Webafra\LaravelSetting;
+namespace Webafra\LaraSetting;
 
 use Illuminate\Support\ServiceProvider;
 
-class LaravelSettingServiceProvider extends ServiceProvider
+class LaraSettingServiceProvider extends ServiceProvider
 {
     /**
      * Bootstrap the application services.

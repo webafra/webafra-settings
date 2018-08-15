@@ -1,5 +1,5 @@
 {
-    "name": "webafra/laravelsetting",
+    "name": "webafra/larasettings",
     "description": "Store your custom Settings in database and cache system",
     "require": {},
     "license": "MIT",
@@ -11,7 +11,7 @@
     ],
     "autoload": {
         "psr-4": {
-            "webafra\\LaravelSetting\\": "src/"
+            "webafra\\LaraSetting\\": "src/"
         }
     },
     "minimum-stability": "dev"
