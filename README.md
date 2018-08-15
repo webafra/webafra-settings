@@ -48,6 +48,11 @@ class SettingController extends Controller {
         #get all settings from an key-value and is primary data array and store them to database
         #example: <input type="text" name="setting['title']">
         Setting::storePrimary($request->input('setting'));
+
+
+        # and you want Clear All primary Cache Data With :
+
+        Setting::clean();
     }
 }
 ```
