@@ -37,7 +37,7 @@ class Setting
                 return SettingModel::where('key', $key)->firstOrFail()->value;
             });
 
-            return $setting->value;
+            return $setting;
 
         } catch (\Exception $e) {
             return $default;
