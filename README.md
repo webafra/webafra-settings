@@ -50,7 +50,7 @@ class SettingController extends Controller {
         Setting::storePrimary($request->input('setting'));
 
 
-        # and you want Clear All primary Cache Data With :
+        # and you want Clear All Cache Data With Artisan command Line :
         Setting::clean();
     }
 }
