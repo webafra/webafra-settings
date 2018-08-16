@@ -85,7 +85,8 @@ class Setting
 
     public function clean()
     {
-        Cache::forget('setting_primary');
+        \Artisan::call('cache:clear');
+        // Cache::forget('setting_primary');
     }
 
 
