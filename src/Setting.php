@@ -76,6 +76,10 @@ class Setting
     {
         $i = 0;
         foreach($setting as $key => $value) {
+            if (gettype($value) == 'array')
+            {
+                $value = serialize($value);
+            }
             $this->set($key, $value, true);
             $i++;
         }
