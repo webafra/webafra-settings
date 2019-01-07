@@ -2,7 +2,7 @@
 
 install via composer
 
-`composer require webafra/larasetting`
+`composer require webafra/larasettings`
 
 Add Service Provider to `config/app.php` providers array:
 ```php
